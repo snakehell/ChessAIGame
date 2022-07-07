@@ -92,7 +92,11 @@ public class Game {
             currentPlayer = (currentPlayer == SquareColor.WHITE) ? SquareColor.BLACK : SquareColor.WHITE;
         }
         board.printBoard();
-        if(whitePieces.isEmpty() || finish && currentPlayer == SquareColor.WHITE) System.out.println("Black wins");
-        if(blackPieces.isEmpty() || finish && currentPlayer == SquareColor.BLACK) System.out.println("White wins");
+        if(whitePieces.isEmpty() || finish && currentPlayer == SquareColor.WHITE) {
+            System.out.println("Black wins");
+        }
+        if(blackPieces.isEmpty() || finish && currentPlayer == SquareColor.BLACK) {
+            System.out.println("White wins");
+        }
     }
 }
