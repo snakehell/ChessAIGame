@@ -1,4 +1,4 @@
-package com.chess.runner;
+package com.chess;
 
 import java.util.*;
 
